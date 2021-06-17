@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StuRegistration"
+    android:orientation="vertical"
+    android:background="@drawable/backround"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION PAGE"
+        android:layout_marginTop="120dp"
+        android:textSize="30dp"
+        android:fontFamily="@font/faster_one"
+        android:textColor="#2196F3"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:hint="UserName"
+        android:id="@+id/s_user"/>
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:id="@+id/s_email"/>
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:id="@+id/s_pass"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Passward"
+        android:id="@+id/cs_pass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        app:backgroundTint="#FFC107"
+        app:cornerRadius="40dp"
+        android:onClick="submit"
+        android:id="@+id/sub"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="If You Have Account!"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Login"
+            android:textColor="#EF0606"
+            android:id="@+id/log"
+            android:onClick="sigin"/>
+    </LinearLayout>
+</LinearLayout>

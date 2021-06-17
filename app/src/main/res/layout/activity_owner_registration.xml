@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OwnerRegistration"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/backround">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/faster_one"
+        android:gravity="center"
+        android:text="REGISTRATION PAGE"
+        android:textColor="#03A9F4"
+        android:textSize="30dp" />
+
+
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:hint="UserName"
+        android:id="@+id/o_uname"/>
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail_o"
+        android:hint="Enter Mail"/>
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:id="@+id/pass_owner"/>
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Passward"
+        android:inputType="textPassword"
+        android:id="@+id/oc_pass"
+        />
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="Aadhaar Hostel Adress"
+        android:id="@+id/o_address"/>
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:hint="Enter City"/>
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="Hostel Name"
+        android:id="@+id/hostelname"/>
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price Per Person per Month"
+        android:id="@+id/price"/>
+
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:id="@+id/phn_no"/>
+
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:text="Submit"
+        app:backgroundTint="#FFC107"
+        app:cornerRadius="40dp"
+        android:id="@+id/submit_owner"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="If You Have Account!"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Login"
+            android:textColor="#EF0606"
+            android:id="@+id/logg"
+            android:onClick="sigin"/>
+    </LinearLayout>
+
+</LinearLayout>

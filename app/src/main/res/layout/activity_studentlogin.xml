@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Studentlogin"
+    android:orientation="vertical"
+    android:background="@drawable/backround"
+    android:gravity="center_horizontal">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="109dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/faster_one"
+        android:gravity="center"
+        android:text="STUDENT LOGIN"
+        android:textColor="#2196F3"
+        android:textSize="40dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="109dp" />
+
+    <EditText
+        android:id="@+id/mailid"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <CheckBox
+        android:id="@+id/showpass"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="49dp"
+        android:gravity="center"
+        android:text="Show Passward"
+        android:checked="true"/>
+
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:text="Forget Password"
+        android:textColor="#F81606"
+        android:onClick="fpass"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Login"
+        app:backgroundTint="#FF9800"
+        app:cornerRadius="30dp"
+        android:id="@+id/login"
+        android:onClick="Login"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/not_register"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/register"
+            android:textColor="#EF0606"
+            android:id="@+id/st_reg"
+            android:onClick="signup"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

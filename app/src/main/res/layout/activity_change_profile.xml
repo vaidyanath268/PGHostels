@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeProfile"
+    android:background="@drawable/profilechange">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_chg"
+        app:civ_border_width="2dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_person"
+        app:civ_border_color="@color/black" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile"
+        android:layout_below="@id/img_chg"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:id="@+id/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="16dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="@color/black"
+            android:text="Close"
+            android:layout_marginRight="6dp"
+            app:backgroundTint="#7DE307"
+            android:textStyle="bold"
+            android:onClick="close"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:shadowColor="@color/black"
+            android:text="Save"
+            android:textStyle="bold"
+            app:backgroundTint="#2196F3" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
